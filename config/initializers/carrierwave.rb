@@ -1,4 +1,6 @@
 ::CarrierWave.configure do |config|
+  config.cache_dir = "#{Rails.root}/tmp/uploads"
+
   config.storage             = :qiniu
   config.qiniu_access_key    = ENV['QINIU_ACCESS_KEY']
   config.qiniu_secret_key    = ENV['QINIU_SECRET_KEY']
