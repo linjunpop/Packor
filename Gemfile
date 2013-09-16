@@ -29,10 +29,29 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'simple_form', '~> 3.0.0.rc'
+gem 'slim-rails', '~> 1.1'
+
 gem 'rails_12factor'
-gem 'qiniu_direct_uploader'
 gem 'ipa_reader'
 gem 'mongoid', github: 'mongoid/mongoid'
+
+gem 'figaro'
+
+gem 'carrierwave'
+gem 'carrierwave-mongoid', require: 'carrierwave/mongoid'
+gem 'carrierwave-qiniu'
+
+gem 'passenger'
+
+group :development do
+  gem 'foreman'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'pry-rails'
+  gem 'quiet_assets'
+  gem 'awesome_print'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

@@ -1,0 +1,27 @@
+h1 Listing builds
+
+table
+  tr
+    th Name
+    th Version
+    th Download
+    th Install
+    th Created At
+    th
+    th
+
+  - @builds.each do |build|
+    tr
+      td = build.name
+      td = build.version
+      td = link_to 'Download IPA file', build.ipa_file.file.url
+      td = link_to 'Install', itms_url_for(build)
+      td = build.created_at
+      td = link_to 'Show', build
+      td = link_to 'Edit', edit_build_path(build)
+      td = link_to 'Destroy', build, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Build', new_build_path
+

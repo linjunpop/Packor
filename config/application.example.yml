@@ -1,0 +1,5 @@
+QINIU_ACCESS_KEY: 'qiniu-access-key'
+QINIU_SECRET_KEY: 'qiniu-secret-key'
+QINIU_BUCKET: 'test'
+QINIU_BUCKET_DOMAIN: "test.qiniudn.com"
+
