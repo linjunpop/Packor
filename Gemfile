@@ -44,7 +44,7 @@ gem 'carrierwave'
 gem 'carrierwave-mongoid', require: 'carrierwave/mongoid'
 gem 'carrierwave-qiniu'
 
-gem 'passenger'
+gem 'puma'
 
 group :development do
   gem 'foreman'
