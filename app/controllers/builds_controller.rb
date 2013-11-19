@@ -28,6 +28,11 @@ class BuildsController < ApplicationController
   # POST /builds
   # POST /builds.json
   def create
+
+    build_params = {}
+
+    build_params[:image]         = ENV['QINIU_BUCKET_DOMAIN'] + params[:key]
+
     @build = Build.new(build_params)
 
     respond_to do |format|

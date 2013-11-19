@@ -44,6 +44,9 @@ gem 'carrierwave'
 gem 'carrierwave-mongoid', require: 'carrierwave/mongoid'
 gem 'carrierwave-qiniu'
 
+gem 'qiniu-rs'
+gem "qiniu_direct_uploader", "~> 0.0.3"
+
 gem 'puma'
 
 group :development do

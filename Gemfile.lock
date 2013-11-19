@@ -81,6 +81,9 @@ GEM
     jbuilder (1.5.1)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2.0)
+    jquery-fileupload-rails (0.4.1)
+      actionpack (>= 3.1)
+      railties (>= 3.1)
     jquery-rails (3.0.4)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
@@ -108,6 +111,12 @@ GEM
       mime-types (~> 1.19)
       rest-client (~> 1.6)
       ruby-hmac (~> 0.4)
+    qiniu_direct_uploader (0.0.3)
+      coffee-rails (>= 3.2.1)
+      jquery-fileupload-rails (~> 0.4.1)
+      qiniu-rs (>= 3.4.5)
+      rails (>= 3.2)
+      sass-rails (>= 3.2.5)
     quiet_assets (1.0.2)
       railties (>= 3.1, < 5.0)
     rack (1.5.2)
@@ -201,6 +210,8 @@ DEPENDENCIES
   mongoid!
   pry-rails
   puma
+  qiniu-rs
+  qiniu_direct_uploader (~> 0.0.3)
   quiet_assets
   rails (= 4.0.0)
   rails_12factor
