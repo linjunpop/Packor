@@ -1,8 +1,9 @@
-p = @build.name
-p = @build.version
-p = link_to 'Download', @build.ipa_file.file.url
-
-= link_to 'Edit', edit_build_path(@build)
-'|
-= link_to 'Back', builds_path
+.row
+  .panel
+    h1 = @build.name
+    h2 Version: #{@build.version}
+    p = qr_image_tag(@build)
+    p.button-group
+      = link_to 'Install', itms_url_for(@build), class: 'small success button'
+      = link_to 'Download', @build.ipa_file.file.url, class: 'small button'
 

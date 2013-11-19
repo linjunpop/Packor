@@ -1,0 +1,8 @@
+tr
+  td = link_to build.name, build
+  td = build.version
+  td.button-group
+    = link_to 'Edit', edit_build_path(build), class: 'small button'
+    = link_to 'Destroy', build, class: 'small alert button',
+      data: { confirm: 'Are you sure?' }, method: :delete
+
