@@ -33,7 +33,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'simple_form', '~> 3.0.0.rc'
+gem 'simple_form', '~> 3.0.0'
 gem 'slim-rails', '~> 1.1'
 
 gem 'rails_12factor'
@@ -43,8 +43,12 @@ gem 'figaro'
 
 gem 'carrierwave'
 gem 'carrierwave-qiniu'
+gem 'carrierwave_backgrounder'
 
 gem 'puma'
+
+gem 'sinatra', '>= 1.3.0', require: nil
+gem 'sidekiq', '~> 2.16'
 
 group :development do
   gem 'foreman'

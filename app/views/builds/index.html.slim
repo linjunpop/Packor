@@ -19,7 +19,9 @@ table
       td = build.created_at
       td = link_to 'Show', build
       td = link_to 'Edit', edit_build_path(build)
-      td = link_to 'Destroy', build, :confirm => 'Are you sure?', :method => :delete
+      td
+        = link_to 'Destroy', build, data: { confirm: 'Are you sure?' },
+          method: :delete
 
 br
 

@@ -9,4 +9,3 @@
   config.qiniu_block_size    = 4*1024*1024
   config.qiniu_protocal      = "http"
 end
-

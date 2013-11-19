@@ -1,4 +1,8 @@
 Packor::Application.routes.draw do
+
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
+
   resources :builds
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -41,7 +45,7 @@ Packor::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'

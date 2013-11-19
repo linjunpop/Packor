@@ -1,0 +1,5 @@
+---
+:verbose: false
+:queues:
+  - [carrierwave, 7]
+  - [default, 5]

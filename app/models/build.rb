@@ -1,5 +1,7 @@
 class Build < ActiveRecord::Base
+
   mount_uploader :ipa_file, IpaUploader
+  store_in_background :ipa_file
 
   before_create :generate_info
 
