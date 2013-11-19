@@ -1,12 +1,4 @@
-class Build
-  include Mongoid::Document
-  include Mongoid::Timestamps
-
-  field :ipa_file, type: String
-  field :name, type: String
-  field :bundle_identifier, type: String
-  field :version, type: String
-
+class Build < ActiveRecord::Base
   mount_uploader :ipa_file, IpaUploader
 
   before_create :generate_info

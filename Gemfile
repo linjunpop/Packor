@@ -5,6 +5,8 @@ ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
+gem 'pg'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -36,12 +38,10 @@ gem 'slim-rails', '~> 1.1'
 
 gem 'rails_12factor'
 gem 'ipa_reader'
-gem 'mongoid', github: 'mongoid/mongoid'
 
 gem 'figaro'
 
 gem 'carrierwave'
-gem 'carrierwave-mongoid', require: 'carrierwave/mongoid'
 gem 'carrierwave-qiniu'
 
 gem 'puma'
